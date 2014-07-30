@@ -5,6 +5,9 @@
     <title>Checkers</title>
     <meta charset="utf=8">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
   </head>
   <body>
   <h1>Let's Play Checkers!</h1>
@@ -34,4 +37,7 @@
   </table>
 
   </body>
+  <script>
+    $('.chip').draggable({ grid: [ 82, 82 ] });
+  </script>
 </html>
