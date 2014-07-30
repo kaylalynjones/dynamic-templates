@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Checkers</title>
+    <meta charset="utf=8">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+  <table border="0">
+    <% for (var h=0; h<8; h++) { %>
+      <tr>
+      <% for (var v=0; v<8; v++) { %>
+        <td>
+          <% if (h%2 !== 0 && v%2 !== 0) { %>
+            <% if (h<=2) { %>
+              <div class="chip teal"/>
+            <% } else if (h>=5) { %>
+              <div class="chip coral"/>
+            <% } %>
+          <% } %>
+          <% if (h%2 === 0 && v%2 === 0) { %>
+            <% if (h<=2) { %>
+              <div class="chip teal"/>
+            <% } else if (h>=5) { %>
+              <div class="chip coral"/>
+            <% } %>
+          <% } %>
+        </td>
+      <% } %>
+      </tr>
+    <% } %>
+  </table>
+
+  </body>
+</html>

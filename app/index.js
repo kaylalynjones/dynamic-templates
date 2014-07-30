@@ -13,6 +13,10 @@ app.get('/', function(req,res){
   res.render('home');
 });
 
+app.get('/checkers', function(req,res){
+  res.render('checkers');
+});
+
 //dynamic port changing
 var port = process.env.PORT;
 app.listen(port, function(){

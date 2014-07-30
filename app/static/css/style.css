@@ -1,2 +1,43 @@
 @import url(http://fonts.googleapis.com/css?family=Frijole|Pacifico|Press+Start+2P);
+/*font-family: 'Frijole', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Press Start 2P', cursive;
+*/
+
+table {
+  border: 5px solid #A17DD9;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 640px;
+  margin: 0 auto;
+}
+td {
+  width: 80px;
+  height: 80px;
+}
+tr:nth-child(odd) > td:nth-child(even) {
+  background-color: #F2F2F2;
+}
+tr:nth-child(odd) > td:nth-child(odd) {
+  background-color: #949494;
+}
+tr:nth-child(even) > td:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+tr:nth-child(even) > td:nth-child(even) {
+  background-color: #949494;
+}
+.chip {
+  margin: 2px;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+}
+.teal {
+  background-color: #29BF94;
+}
+.coral {
+  background-color: #FA434C;
+}
 
