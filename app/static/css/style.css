@@ -3,9 +3,15 @@
 font-family: 'Pacifico', cursive;
 font-family: 'Press Start 2P', cursive;
 */
-
+h1 {
+  text-align: center;
+  padding: 15px;
+  color: #558FA2;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+}
 table {
-  border: 5px solid #A17DD9;
+  border: 5px solid #ABA8AF;
   table-layout: fixed;
   border-spacing: 0;
   border-collapse: collapse;
@@ -20,13 +26,13 @@ tr:nth-child(odd) > td:nth-child(even) {
   background-color: #F2F2F2;
 }
 tr:nth-child(odd) > td:nth-child(odd) {
-  background-color: #949494;
+  background-color: #558FA2;
 }
 tr:nth-child(even) > td:nth-child(odd) {
   background-color: #F2F2F2;
 }
 tr:nth-child(even) > td:nth-child(even) {
-  background-color: #949494;
+  background-color: #558FA2;
 }
 .chip {
   margin: 2px;
@@ -38,6 +44,6 @@ tr:nth-child(even) > td:nth-child(even) {
   background-color: #29BF94;
 }
 .coral {
-  background-color: #FA434C;
+  background-color: #FD7D7D;
 }
 
