@@ -53,8 +53,13 @@ app.get('/rolldice/:x', function(req,res){
     num = Math.floor(Math.random()*6)+1;
     nums.push(num);
   }
+  var sum = 0;
+  for (i=0; i<nums.length; i++) {
+    sum += nums[i];
+  }
+  console.log(sum);
   console.log(nums);
-  var obj = {nums:nums};
+  var obj = {nums:nums, sum:sum};
   res.render('rolldice', obj);
 });
 

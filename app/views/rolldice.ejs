@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Roll Dice</title>
-    <link rel="stylesheet" href="/css/sumstyle.css">
+    <link rel="stylesheet" href="/css/dicestyle.css">
   </head>
   <body>
-    <h1>Hedge Your Bet...</h1>
-    <% for (var i=0; i<nums.length; i++) { %>
-      <img src="/images/die<%= nums[i] %>.png" alt="die"/>
-    <% } %>
+    <h1>You rolled...
+      <span><%= sum %></span>
+    </h1>
+    <div>
+      <% for (var i=0; i<nums.length; i++) { %>
+        <img src="/images/die<%= nums[i] %>.png" alt="die"/>
+      <% } %>
+    </div>
   </body>
 </html>
