@@ -46,19 +46,20 @@ app.get('/sumlist/:list', function(req,res){
 app.get('/rolldice/:x', function(req,res){
   req.params.x *= 1;
   var rolls = req.params.x;
-  console.log(rolls);
+  //console.log(rolls);
   var nums= [];
   var num = 0;
+  var sum = 0;
   for (var i=0; i<rolls; i++){
     num = Math.floor(Math.random()*6)+1;
     nums.push(num);
+    //sum += num; should have done this    <-----------
   }
-  var sum = 0;
   for (i=0; i<nums.length; i++) {
     sum += nums[i];
   }
-  console.log(sum);
-  console.log(nums);
+  //console.log(sum);
+  //console.log(nums);
   var obj = {nums:nums, sum:sum};
   res.render('rolldice', obj);
 });
